@@ -12,8 +12,7 @@ body {
 }
 
 header {
-  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
-    no-repeat center center/cover;
+  background: url("img/homeheader.jpg") no-repeat center center/cover;
   height: 100vh;
   color: white;
   display: flex;
@@ -89,7 +88,7 @@ section {
   color: white;
   padding: 2rem;
   text-align: center;
-} 
+}
 
 .contact h2 {
   margin-bottom: 1rem;
@@ -129,6 +128,28 @@ footer {
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   object-fit: cover;
+}
+
+.about {
+  background: #f0f8ff;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #023e8a;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #023e8a;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 /* Tablets (landscape and portrait) */
@@ -220,4 +241,3 @@ footer {
     font-size: 0.85rem;
   }
 }
-

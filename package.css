@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: url("img/headerpackage.jpg") no-repeat center center / cover;
+  height: 60vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px #000;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.packages {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.packages h2 {
+  font-size: 2rem;
+  color: #023e8a;
+  margin-bottom: 2rem;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.package-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: scale(1.05);
+}
+
+.package-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body h3 {
+  color: #0077b6;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  margin: 0.5rem 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #023e8a;
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #0077b6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #023e8a;
+}
+
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive for Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 599px) {
+  header {
+    height: 50vh;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .card-body h3 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
