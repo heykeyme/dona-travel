@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background: url("img/headerpackage.jpg") no-repeat center center / cover;
+  background: url("https://images.unsplash.com/photo-1725622417978-8589fb9cc98a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHRyYXZlbCUyMGFzaWFufGVufDB8fDB8fHww") no-repeat center center / cover;
   height: 60vh;
   color: white;
   display: flex;
@@ -23,13 +23,13 @@ header {
   padding: 2rem;
 }
 
-header h1 {
+header h2 {
   font-size: 3rem;
   text-shadow: 2px 2px 6px #000;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   margin-top: 1rem;
   text-shadow: 1px 1px 3px #000;
 }
