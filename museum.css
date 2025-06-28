@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: url("img/museumHeader.jpg")
+    no-repeat center center/cover;
+  height: 70vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px #000;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.video-section {
+  background: #e6f2ff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #023e8a;
+}
+
+.vertical-video-container {
+  position: relative;
+  width: 100%;
+  max-width: 480px; /* control the width */
+  aspect-ratio: 9 / 16; /* vertical orientation */
+  margin: 0 auto; /* center horizontally */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.vertical-video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.gallery {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #023e8a;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  color: #0077b6;
+  font-size: 1rem;
+}
+
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  .video-container video {
+    max-width: 360px;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  header {
+    height: 50vh;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  .video-container {
+    padding: 0;
+  }
+
+  .video-container video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+  .card-body h3 {
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
